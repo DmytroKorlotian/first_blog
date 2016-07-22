@@ -7,4 +7,8 @@ class Article < ApplicationRecord
 
   has_many :comments, dependent: :destroy
 
+  def title_capitalized
+  	title.capitalize
+  end
+
 end
